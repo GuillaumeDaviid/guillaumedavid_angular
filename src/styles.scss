@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 * {
+    font-family: ambleregular;
+    font-weight: 300;
     padding: 0;
     margin: 0;
 }
 
 a {
     text-decoration: none;
+    outline: none;
+    color: black;
 }
