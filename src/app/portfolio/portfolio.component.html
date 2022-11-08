@@ -7,10 +7,10 @@
         
 
         <ul class="Portfolio_btn">
-            <li class="notSelected">ALL</li>
-            <li class="notSelected">FRONT END</li>
-            <li class="notSelected">FULL STACK</li>
-            <li class="notSelected">MOBILE</li>
+            <li class="notSelected" (click)="PortfolioService.changeCategory('all')">ALL</li>
+            <li class="notSelected" (click)="PortfolioService.changeCategory('front')">FRONT END</li>
+            <li class="notSelected" (click)="PortfolioService.changeCategory('full')">FULL STACK</li>
+            <li class="notSelected" (click)="PortfolioService.changeCategory('mobile')">MOBILE</li>
         </ul>
         <div class="Portfolio_items">
 

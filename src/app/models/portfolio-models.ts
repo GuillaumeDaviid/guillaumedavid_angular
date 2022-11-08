@@ -1,6 +1,7 @@
 export class Portfolio {
-    id!: number
+    id!: number;
     title!: string;
     link!: string;
     image!: string;
+    category!: string;
 }

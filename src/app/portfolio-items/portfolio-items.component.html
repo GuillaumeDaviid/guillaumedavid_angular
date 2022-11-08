@@ -1,7 +1,7 @@
-<div class=Portfolio_items-elt>
+<div class=Portfolio_items-elt [ngClass]="{notVisible: portfolio.category !== category && category !== 'all'}">
     <img [src]="portfolio.image" [alt]="portfolio.title" class="Portfolio_items-img"/>
     <div class="Portfolio_items-content">
-        <h3>{{portfolio.title}}</h3>
+        <h3>{{portfolio.title | uppercase}}</h3>
         <a [href]="portfolio.link" target="_blank" data-testid="link">Lien</a>
     </div>
 </div>
