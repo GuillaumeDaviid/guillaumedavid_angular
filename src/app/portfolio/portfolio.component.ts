@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Portfolio} from "../models/portfolio-models"
+import { Component, OnInit, Input } from '@angular/core';
+import { Portfolio } from "../models/portfolio-models"
 
 @Component({
   selector: 'app-portfolio',
@@ -7,43 +7,42 @@ import {Portfolio} from "../models/portfolio-models"
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  portfolio!:Portfolio[];
 
-  constructor() { }
+  portfolio!: Portfolio[]
 
-  ngOnInit(): void {
+
+  ngOnInit() {
     this.portfolio = [
       {
         id: 1,
         title: "01 Academie",
         link: "https://github.com/GuillaumeDaviid/01-Academie-Version-React",
-        image: "../../images/01academie.png"
+        image: "assets/01academie.png"
       },
       {
         id: 2,
         title: "Netflix",
         link: "https://clone-guillaumedavid.herokuapp.com/",
-        image: "../../images/netflix.png"
+        image: "assets/netflix.png"
       },
       {
         id: 3,
         title: "Commercia",
         link: "https://commercia.vercel.app/",
-        image: "../../images/commercia.png"
+        image: "assets/commercia.png"
       },
       {
         id: 4,
         title: "Jeu de Dame",
         link: "https://guillaumedaviid.github.io/Checkers-Game/",
-        image: "../../images/checkers.png"
+        image: "assets/checkers.png"
       },
       {
         id: 5,
         title: "Leagora",
         link: "https://visio.leagora.fr/",
-        image: "../../images/leagora.png"
-      },
+        image: "assets/leagora-salle.png"
+      }
     ]
   }
-
 }

@@ -14,6 +14,8 @@
         </ul>
         <div class="Portfolio_items">
 
+            <app-portfolio-items *ngFor="let elements of portfolio" [portfolio]="elements"></app-portfolio-items>
+
         </div>
 
         <a href='/portfolio' class='btn_link'><button class='btn btn_contact'>En voir plus</button></a>

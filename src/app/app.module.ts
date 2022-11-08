@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WhyComponent } from './why/why.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
+import { PortfolioItemsComponent } from './portfolio-items/portfolio-items.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     SkillsComponent,
     WhyComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioItemsComponent
   ],
   imports: [
     BrowserModule
