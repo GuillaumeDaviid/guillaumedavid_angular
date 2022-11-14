@@ -26,7 +26,31 @@
     </div>
 
     <div class="Form_content-form" data-testid="form">
+        <form [formGroup]="form" class="Form_content-form" id="formid">
+            <div class="row_form">
 
+            <div>
+                <input id="name" type="text" formControlName="name" id="name" placeholder="name" class="row_form-name" >
+            </div>
+
+            <div>
+                <input id="email" type="email" formControlName="email" rows="4" placeholder="email"  class="row_form-mail">
+            </div>
+
+            </div>
+
+            <div>
+                <textarea id="message" type="text" formControlName="message" placeholder="message"  class="row_form-msg"></textarea>
+            </div>
+
+            <div class="container-btn">
+
+            <div>
+                <button type="submit" class="btn-form" (click)="onSubmitForm()">ENVOYER</button>
+            </div>
+
+            </div>
+        </form>
     </div>
 
     </div>
