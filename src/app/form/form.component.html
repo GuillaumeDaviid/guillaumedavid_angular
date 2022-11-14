@@ -46,7 +46,7 @@
             <div class="container-btn">
 
             <div>
-                <button type="submit" class="btn-form" (click)="onSubmitForm()">ENVOYER</button>
+                <button type="submit" class="btn-form" (click)="onSubmitForm()" [disabled]="form.invalid">ENVOYER</button>
             </div>
 
             </div>
