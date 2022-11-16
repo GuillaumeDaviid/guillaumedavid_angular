@@ -2,5 +2,18 @@
          
     <h2 data-testid="title">Article</h2>
     <div class="Article_separator" data-testid="separator"></div>
+    
+<div class="Article_items">
+    <button class="Article_items-btn right" data-testid="btn">&lt;</button>
+    <button class="Article_items-btn left" data-testid="btn">&gt;</button>
+    <div class="Article_items-elt">
+    <div *ngFor="let item of data" class="Article_items-elt-item">
+            <img [src]="item.thumbnail" [alt]="item.title" class="Article_items-img"/>
+            <a [href]="item.link" target="_blank">{{item.title}}</a>
+    </div>
+    </div>
+</div>
 
+
+    <!-- <app-article-items *ngFor="let item of data " [article]="item"></app-article-items> -->
 </div>

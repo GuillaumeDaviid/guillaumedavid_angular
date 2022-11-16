@@ -23,5 +23,6 @@ export class PortfolioItemsComponent implements OnInit, OnDestroy {
     this.$category = this.PortfolioService.currentCategory.subscribe((message:any) => {
       this.category = message;
     });
+    console.log(this.$category)
   }
 }
