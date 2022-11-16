@@ -23,6 +23,10 @@ export class ArticleService {
   getAllArticles(): Observable<Articles> {
     return this.http.get<Articles>('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@guillaumedaavid', httpOptions);
   }
+/*
+  getAllArticles(): Observable<Articles[]> {
+    return this.http.get<Articles[]>('https://jsonplaceholder.typicode.com/posts', httpOptions);
+  }*/
 
 
 

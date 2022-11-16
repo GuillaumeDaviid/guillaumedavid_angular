@@ -7,7 +7,7 @@ import { Articles } from '../models/article-models';
   styleUrls: ['./article-items.component.scss']
 })
 export class ArticleItemsComponent implements OnInit {
-  @Input() public data!: Articles
+  @Input() article!: Articles[]
 
   constructor() { }
 

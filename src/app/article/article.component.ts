@@ -10,7 +10,7 @@ import { ArticleService } from "../services/articles.service"
 })
 export class ArticleComponent implements OnInit {
 
-  article$!: Observable<Articles>;
+  article$!: Observable<Articles>
   data:any=[]
 
   constructor(private articleService: ArticleService) {
@@ -22,5 +22,8 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit(): void {
     this.article$ = this.articleService.getAllArticles()
+   /* this.article$.subscribe(data => {
+      console.warn(data)
+    })*/
   }
 }
