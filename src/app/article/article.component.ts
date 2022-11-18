@@ -11,7 +11,9 @@ import { ArticleService } from "../services/articles.service"
 export class ArticleComponent implements OnInit {
 
   article$!: Observable<Articles>
-  data:any=[]
+  data:any=[];
+  nbr: number = 1;
+  p: number = 0;
 
   constructor(private articleService: ArticleService) {
     this.articleService.getAllArticles().subscribe(data => {
@@ -22,8 +24,30 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit(): void {
     this.article$ = this.articleService.getAllArticles()
-   /* this.article$.subscribe(data => {
-      console.warn(data)
-    })*/
   }
+
+   handleClickNext() {
+    let carrousel = document.getElementById('carrousel');
+    if (carrousel){
+        if (this.nbr < 8){
+            this.nbr ++;
+            this.p --;
+            carrousel.style.transform = "translate("+this.p*25+"vw)";
+            carrousel.style.transition = "all 0.5s ease";
+        }
+    }
+   }
+
+     handleClickPrevious() {
+        let carrousel = document.getElementById('carrousel');
+        if (carrousel){
+      if (this.nbr > 1){
+        this.nbr --;
+        this.p ++;
+      carrousel.style.transform = "translate("+this.p*25+"vw)";
+      carrousel.style.transition = "all 0.5s ease";
+      }
+      
+        }
+    }
 }
