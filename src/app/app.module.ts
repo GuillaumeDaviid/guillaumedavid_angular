@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,6 +13,7 @@ import { WhyComponent } from './why/why.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioItemsComponent } from './portfolio-items/portfolio-items.component';
+import { ArticleItemsComponent } from './article-items/article-items.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { PortfolioItemsComponent } from './portfolio-items/portfolio-items.compo
     WhyComponent,
     FormComponent,
     FooterComponent,
-    PortfolioItemsComponent
+    PortfolioItemsComponent,
+    ArticleItemsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
