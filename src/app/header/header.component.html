@@ -1,17 +1,17 @@
 <section id="home">
     <div class="Header">
 
-    <nav class="nav_notVisible" data-testid="nav">
+    <nav *ngIf="this.nav" class="Header_nav nav_visible" data-testid="nav">
             <ul>
-            <li data-testid="li"><a href="#home" onClick={handleClick}><span>Accueil</span></a></li>
-            <li data-testid="li"><a href="#portfolio" onClick={handleClick}><span>Portfolio</span></a></li>
-            <li data-testid="li"><a href="#contact" onClick={handleClick}><span>Contact</span></a></li>
-            <li data-testid="li"><a href="/blog" onClick={handleClick}><span>Blog</span></a></li>
+            <li data-testid="li"><a href="#home" (click)="handleClick()"><span>Accueil</span></a></li>
+            <li data-testid="li"><a href="#portfolio" (click)="handleClick()"><span>Portfolio</span></a></li>
+            <li data-testid="li"><a href="#contact" (click)="handleClick()"><span>Contact</span></a></li>
+            <li data-testid="li"><a href="/blog" (click)="handleClick()"><span>Blog</span></a></li>
             </ul>
-            <a href="#" class="cd-close-menu" onClick={handleClick} data-testid="closeNav">Close<span></span></a>
+            <a href="#" class="cd-close-menu" (click)="handleClick()" data-testid="closeNav">Close<span></span></a>
         </nav>
 
-        <p class="cd-menu-trigger" onClick={handleClick} data-testid="burger-menu"><span></span></p>
+        <p class="cd-menu-trigger" (click)="handleClick()" data-testid="burger-menu"><span></span></p>
         <h1 class="Header_title" data-testid="title">GUILLAUME DAVID</h1>
 
         <div class="Header_separator-white"></div>

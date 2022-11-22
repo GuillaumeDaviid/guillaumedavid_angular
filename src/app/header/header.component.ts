@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  nav: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  handleClick() {
+    this.nav = !this.nav;
+  }
+
+  
 
 }
