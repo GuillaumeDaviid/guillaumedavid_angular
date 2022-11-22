@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectorRef } from '@angular/core';
-import { Portfolio } from "../core/models/portfolio-models"
-import { PortfolioService } from '../core/services/portfolio.service';
+import { Portfolio } from "../models/portfolio-models"
+import { PortfolioService } from '../services/portfolio.service';
 
 @Component({
   selector: 'app-portfolio',

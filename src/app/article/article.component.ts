@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Articles } from '../core/models/article-models'
+import { Articles } from '../models/article-models'
 import { Observable } from 'rxjs';
-import { ArticleService } from "../core/services/articles.service"
+import { ArticleService } from "../services/articles.service"
 
 @Component({
   selector: 'app-article',
